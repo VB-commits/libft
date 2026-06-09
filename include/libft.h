@@ -3,10 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vabisco <vabisco@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: vabisco <vabisco@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:20:17 by vbisco            #+#    #+#             */
+<<<<<<< HEAD
+/*   Updated: 2026/06/09 15:08:52 by vabisco          ###   ########.fr       */
+=======
 /*   Updated: 2026/05/25 17:25:11 by vabisco          ###   ########.fr       */
+>>>>>>> 8fefc3f8aa0f7f5df3d213c96f688eccfaa8e118
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,10 +72,10 @@ void			*ft_memset(void *b, int c, size_t len);
 /* ******************** */
 
 /* ** put/ ************ */
-void			ft_putchar_fd(char c, int fd);
-void			ft_putendl_fd(char *s, int fd);
+ssize_t			ft_putchar_fd(char c, int fd);
+ssize_t			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
-void			ft_putstr_fd(char *s, int fd);
+ssize_t			ft_putstr_fd(char *s, int fd);
 /* ******************** */
 
 /* ** str/ ************ */

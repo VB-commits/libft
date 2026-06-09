@@ -12,10 +12,21 @@
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+ssize_t	ft_putstr_fd(char *s, int fd)
 {
+	ssize_t	total;
+	ssize_t	ret;
+
 	if (!s || fd < 0)
-		return ;
+		return (-1);
+	total = 0;
 	while (*s)
-		ft_putchar_fd(*s++, fd);
+	{
+		ret = ft_putchar_fd(*s, fd);
+		if (ret == -1)
+			return (-1);
+		total += ret;
+		s++;
+	}
+	return (total);
 }
