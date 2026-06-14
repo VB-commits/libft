@@ -6,7 +6,7 @@
 /*   By: vabisco <vabisco@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:20:17 by vbisco            #+#    #+#             */
-/*   Updated: 2026/05/25 17:25:11 by vabisco          ###   ########.fr       */
+/*   Updated: 2026/06/14 10:43:07 by vabisco          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,10 +68,10 @@ void			*ft_memset(void *b, int c, size_t len);
 /* ******************** */
 
 /* ** put/ ************ */
-void			ft_putchar_fd(char c, int fd);
-void			ft_putendl_fd(char *s, int fd);
+ssize_t			ft_putchar_fd(char c, int fd);
+ssize_t			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
-void			ft_putstr_fd(char *s, int fd);
+ssize_t			ft_putstr_fd(char *s, int fd);
 /* ******************** */
 
 /* ** str/ ************ */
