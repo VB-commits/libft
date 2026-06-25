@@ -44,6 +44,9 @@ FCN = \
 	src/lst/ft_lstmap.c \
 	src/lst/ft_lstnew.c \
 	src/lst/ft_lstsize.c \
+	src/math/ft_power.c \
+	src/math/ft_min.c \
+	src/math/ft_max.c \
 	src/mem/ft_bzero.c \
 	src/mem/ft_calloc.c \
 	src/mem/ft_memchr.c \

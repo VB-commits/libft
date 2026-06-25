@@ -6,7 +6,7 @@
 /*   By: vabisco <vabisco@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:20:17 by vbisco            #+#    #+#             */
-/*   Updated: 2026/06/14 10:43:07 by vabisco          ###   ########.fr       */
+/*   Updated: 2026/06/25 11:25:09 by vabisco          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,13 @@ t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void (*del)(void *));
 int				ft_lstsize(t_list *lst);
 /* ******************** */
+
+/* ** math/ *********** */
+int				ft_power(int nb, int power);
+long long		ft_min(long long a, long long b);
+long long		ft_max(long long a, long long b);
+/* ******************** */
+
 
 /* ** mem/ ************ */
 void			ft_bzero(void *s, size_t n);
